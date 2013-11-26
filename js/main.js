@@ -1,0 +1,36 @@
+var frame;
+var sea;
+var easel;
+var ball;
+var wall;
+var floor;
+
+var init = function() {
+    frame = document.querySelector('#frame');    
+    sea = document.querySelector('#sea');    
+    easel = document.querySelector('#easel');    
+    ball = document.querySelector('#ball');
+    wall = document.querySelector('#wall');
+    floor = document.querySelector('#floor');
+};
+
+window.onload = function() {
+    init();  
+};
+
+
+window.onmousemove = function(e) {
+    var dx = e.pageX - 340;
+    var f = 'rotateY(' + dx/50 + 'deg)'; 
+    frame.style['-webkit-transform'] = f;
+    var s = dx/100 + 100 +'px';
+    sea.style.marginLeft = s;
+    var e = 'rotateY(' + -dx/100 + 'deg)';
+    easel.style['-webkit-transform']= e;
+    var b = dx/70 + 260 +'px';
+    ball.style.marginLeft = b;
+    var w = dx/80 + 200 +'px';
+    wall.style.marginLeft = w;
+    var f = dx/80 + 200 +'px';
+    floor.style.marginLeft=f;  
+};
