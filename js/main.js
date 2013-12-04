@@ -6,40 +6,39 @@ var rand = function(min, max) {
     return min + Math.random() * (max - min);    
 };
 
-var makeRGB = function(r, g, b) {
-    return 'rgb(' + r + ',' + g + ',' + b + ')';    
+var makeHSLA = function(h, s, l, a) {
+    return 'hsla(' + h + ',' + s + '%,' + l + '%,' + a + ')';  
 };
 
-var randRGB = function() {
-    return makeRGB(Math.floor(rand(0, 255)), Math.floor(rand(0, 255)), Math.floor(rand(0, 255)));    
+var randHSLA = function() {
+    return makeHSLA(Math.floor(rand(0, 80)), Math.floor(rand(100, 100)), Math.floor(rand(45, 55)), rand(0.4, 0.7));    
 };
 
-var createRect = function(x, y, h, w) {
-    var r = document.createElementNS(ns, 'rect');
-    r.setAttribute('x', x);
-    r.setAttribute('y', y);
-    r.setAttribute('width', w);
-    r.setAttribute('height', h);
-    r.setAttribute('fill', randRGB());
-    s.appendChild(r);
+var createRect = function(cx, cy, r) {
+    var c = document.createElementNS(ns, 'circle');
+    c.setAttribute('cx', cx);
+    c.setAttribute('cy', cy);
+    c.setAttribute('r', r);
+    c.setAttribute('fill', randHSLA());
+    s.appendChild(c);
 };
 
 var letterCor = function(x, a1, a2, a3, b1, b2, b3, c1, c2, c3, d1, d2, d3, e1, e2, e3){
-  if (a1) createRect(x+0,0,9,9);
-  if (a2) createRect(x+10,0,9,9);
-  if (a3) createRect(x+20,0,9,9);
-  if (b1) createRect(x+0,10,9,9);
-  if (b2) createRect(x+10,10,9,9);
-  if (b3) createRect(x+20,10,9,9);
-  if (c1) createRect(x+0,20,9,9);
-  if (c2) createRect(x+10,20,9,9);
-  if (c3) createRect(x+20,20,9,9);
-  if (d1) createRect(x+0,30,9,9);
-  if (d2) createRect(x+10,30,9,9);
-  if (d3) createRect(x+20,30,9,9);
-  if (e1) createRect(x+0,40,9,9);
-  if (e2) createRect(x+10,40,9,9);
-  if (e3) createRect(x+20,40,9,9);
+  if (a1) createRect(x+0,0+100,rand(7,9));
+  if (a2) createRect(x+10,0+100,rand(7,9));
+  if (a3) createRect(x+20,0+100,rand(7,9));
+  if (b1) createRect(x+0,10+100,rand(7,9));
+  if (b2) createRect(x+10,10+100,rand(7,9));
+  if (b3) createRect(x+20,10+100,rand(7,9));
+  if (c1) createRect(x+0,20+100,rand(7,9));
+  if (c2) createRect(x+10,20+100,rand(7,9));
+  if (c3) createRect(x+20,20+100,rand(7,9));
+  if (d1) createRect(x+0,30+100,rand(7,9));
+  if (d2) createRect(x+10,30+100,rand(7,9));
+  if (d3) createRect(x+20,30+100,rand(7,9));
+  if (e1) createRect(x+0,40+100,rand(7,9));
+  if (e2) createRect(x+10,40+100,rand(7,9));
+  if (e3) createRect(x+20,40+100,rand(7,9));
 
 }
 
@@ -85,11 +84,11 @@ for(var i=0; i<x.length; i++ ){
 var checkenglish = /^[a-z][a-z\d]*$/i.test(xx); 
 if (checkenglish){
       var xxx = xx.toLowerCase();
-          letterDefine(xxx,i*35);
+          letterDefine(xxx,i*40+100);
 } else if(xx==' '){
-  letterDefine(xx,i*35);
+  letterDefine(xx,i*40+100);
 }else{
-           letterDefine('?',i*35);
+           letterDefine('?',i*40+100);
 }
 }
 }

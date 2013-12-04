@@ -1,0 +1,9 @@
+@-webkit-keyframes anim{
+    0%{-webkit-filter:blur(1px);}
+    50%{-webkit-filter:blur(2px);}
+    100%{-webkit-filter:blur(1px);}
+}
+
+#letter{
+    -webkit-animation:anim 5s infinite;
+}
