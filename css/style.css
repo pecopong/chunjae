@@ -1,9 +1,6 @@
-@-webkit-keyframes anim{
-    0%{-webkit-filter:blur(1px);}
-    50%{-webkit-filter:blur(2px);}
-    100%{-webkit-filter:blur(1px);}
-}
-
-#letter{
-    -webkit-animation:anim 5s infinite;
+svg{
+  background-color:black;
+  width:1000px;
+  height:1000px;
+  margin-top:100px;
 }
