@@ -1,52 +1,73 @@
 storyjs_jsonp_data = {
     "timeline":
     {
-        "headline":"Interaction",
+        "headline":"codevolution",
         "type":"default",
-		"text":"we interact",
+		"text":"code",
 		"startDate":"2013,8,26",
         "date": [
             {
                 "startDate":"2013,8,26",
-				"endDate":"2012,8,27",
-                "headline":"Beginning",
-                "text":"<p>now is the time</p>",
+                "headline":"Ape",
+                "text":"<p>Coding? Is that some kind of food?</p>",
                 "asset":
                 {
-                    "media":"<video width='320' height='240' controls src='./media/1.mp4'",
+                    "media":"./media/ape.jpg",
                     "credit":"",
                     "caption":""
                 }
             },
             {
-                "startDate":"2013,9,26",
-                "headline":"Quests",
-                "text":"<p>what we did</p>",
+                "startDate":"2013,9,5",
+                "headline":"australopithecus",
+                "text":"<p>Learned about HTML, CSS and Javascript<br>Started codecademy</p>",
                 "asset":
                 {
-                    "media":"./media/quest.png",
+                    "media":"./media/aus.jpg",
                     "credit":"",
                     "caption":""
                 }
             },
             {
-                "startDate":"2013,10,26",
-                "headline":"Graphs",
-                "text":"<p>some graphs</p>",
+                "startDate":"2013,9,25",
+                "headline":"homo habilis",
+                "text":"<p>Made its first own javascript code<br>Application of rock, scissors and paper from codecademy</p>",
                 "asset":
                 {
-                    "media":"./media/graph.png",
+                    "media":"./media/hab.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,10,25",
+                "headline":"homo erectus",
+                "text":"<p>Now can use HTML, CSS and Javascript combination<br>Also learned about Jquery</p>",
+                "asset":
+                {
+                    "media":"./media/ere.jpg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2013,11,21",
+                "headline":"homo sapiens",
+                "text":"<p>More serious application and new skills<br>Learned how to create CSS animation and to use SVG images</p>",
+                "asset":
+                {
+                    "media":"./media/sap.jpg",
                     "credit":"",
                     "caption":""
                 }
             },
             {
                 "startDate":"2013,12,18",
-                "headline":"End",
-                "text":"<p>at last!</p>",
+                "headline":"homo sapiens sapiens",
+                "text":"<p>Final evolution form<br>Searching for possibilities of coding<br>Focusing on what can she make and how to by herself</p>",
                 "asset":
                 {
-                    "media":"http://www.youtube.com/watch?v=WVOqKDhWXYc",
+                    "media":"./media/spp.jpg",
                     "credit":"",
                     "caption":""
                 }

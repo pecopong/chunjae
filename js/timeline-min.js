@@ -4485,10 +4485,9 @@ if(typeof VMM != 'undefined' && typeof VMM.MediaElement == 'undefined') {
 					if (m.id.match("https://")) {
 						m.id = m.id.replace("https://","http://");
 					}
-					mediaElem			=	"<div class='media-image media-shadow'><img src='" + m.id + "' class='media-image'></div>";
+					mediaElem			=	"<div class='media-image'><img src='" + m.id + "' class='media-image'></div>";
 			// FLICKR
 				} else if (m.type		==	"flickr") {
-					//mediaElem			=	"<div class='media-image media-shadow' id='" + uid + "'>" + loading_messege + "</div>";
 					mediaElem			=	"<div class='media-image media-shadow'><a href='" + m.link + "' target='_blank'><img id='" + uid + "'></a></div>";
 					VMM.ExternalAPI.flickr.get(m);
 			// INSTAGRAM
@@ -4573,7 +4572,7 @@ if(typeof VMM != 'undefined' && typeof VMM.MediaElement == 'undefined') {
 				}
 				
 			// WRAP THE MEDIA ELEMENT
-				mediaElem				=	"<div class='media-container' >" + mediaElem + creditElem + captionElem + "</div>";
+				mediaElem				=	"<div class='media-container'>" + mediaElem + creditElem + captionElem + "</div>";
 			// RETURN
 				if (isTextMedia) {
 					return "<div class='text-media'><div class='media-wrapper'>" + mediaElem + "</div></div>";
