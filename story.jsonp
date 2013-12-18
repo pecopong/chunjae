@@ -8,12 +8,11 @@ storyjs_jsonp_data = {
         "date": [
             {
                 "startDate":"2013,8,26",
-				"endDate":"2013,9,4",
                 "headline":"Ape",
                 "text":"<p>Coding? Is that some kind of food?</p>",
                 "asset":
                 {
-                    "media":"",
+                    "media":"./media/ape.jpg",
                     "credit":"",
                     "caption":""
                 }
@@ -74,5 +73,7 @@ storyjs_jsonp_data = {
                 }
             }
         ]
+    }
+}  ]
     }
 }
