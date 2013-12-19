@@ -46,7 +46,7 @@ storyjs_jsonp_data = {
                 "asset":
                 {
                     "media":"./media/ere.jpg",
-                    "credit":"",
+                    "credit":"http://codepen.io/pecopong/pen/IjHvx",
                     "caption":""
                 }
             },
@@ -57,7 +57,7 @@ storyjs_jsonp_data = {
                 "asset":
                 {
                     "media":"./media/sap.jpg",
-                    "credit":"",
+                    "credit":"http://pecopong.github.it/pecomagr",
                     "caption":""
                 }
             },
@@ -68,7 +68,7 @@ storyjs_jsonp_data = {
                 "asset":
                 {
                     "media":"./media/spp.jpg",
-                    "credit":"",
+                    "credit":"http://pecopong.github.io/pecotype",
                     "caption":""
                 }
             }
