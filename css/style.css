@@ -1,0 +1,38 @@
+@import url('http://api.mobilis.co.kr/webfonts/v2/css/HeummJingo252Web');
+
+body{
+    text-align:CENTER;
+    font-family:'HeummJingo252Web';
+    font-size:12px;
+}
+
+textarea{
+    background-color:EEEEEE;
+    width:230px;
+    height:135px;
+    border:0;
+    padding:5px;
+    resize:none;
+}
+
+#ss-submit{
+    background-color:FFFFFF;
+    border:0px;
+    font-family:'HeummJingo252Web';
+    font-size:12px;
+    text-decoration:underline
+}
+
+#ss-submit:focus{
+    outline:0;
+}
+
+textarea:focus{
+    outline:0;
+}
+
+#wrap{
+    width:300px;
+    margin-top:250px;
+    display:inline-block;
+}
